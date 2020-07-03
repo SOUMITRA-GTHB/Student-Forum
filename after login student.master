@@ -1,0 +1,109 @@
+﻿<%@ Master Language="VB" CodeFile="after login student.master.vb" Inherits="after_login_student" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style3
+        {
+            width: 107%;
+            height: 204px;
+        }
+        .style4
+        {
+            width: 1618px;
+        }
+        .style13
+        {
+            width: 120%;
+            height: 223px;
+        }
+        .style14
+        {
+            width: 487px;
+            height: 243px;
+        }
+        .style15
+        {
+            height: 243px;
+        }
+    </style>
+</head>
+<body style="height: 372px">
+    <form id="form1" runat="server" 
+    style="background-color: #00FFFF; height: 292px;">
+    <table class="style3">
+        <tr>
+            <td class="style4" style="background-color: #0000CC">
+                &nbsp;&nbsp;&nbsp;&nbsp;<table class="style13">
+            <tr>
+                <td class="style14" 
+                    
+                    style="background-image: url('/student_forum/pic/forum_pics/books-stack-realistic_1284-4735.jpg'); background-repeat: repeat; background-color: #000080;">
+                    <asp:Panel ID="Panel2" runat="server" 
+                        BackImageUrl="~/pic/forum_pics/books-stack-realistic_1284-4735.jpg" 
+                        Height="240px" Width="488px">
+                        <asp:Image ID="Image5" runat="server" Height="129px" 
+                            ImageUrl="~/pic/forum_pics/e-questions_logo.jpg" Width="496px" />
+                    </asp:Panel>
+                </td>
+                <td class="style15">
+                    <asp:Panel ID="Panel1" runat="server" BackColor="#0000CC" Height="236px" 
+                        BackImageUrl="~/pic/forum_pics/abstract-art-artistic-1020315.jpg" 
+                        style="margin-left: 0px">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                        &nbsp;&nbsp;&nbsp;
+                        <asp:ImageButton ID="ImageButton2" runat="server" Height="26px" 
+                            ImageUrl="~/pic/twiteer_icon.png" Width="26px" />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:ImageButton ID="ImageButton3" runat="server" Height="27px" 
+                            ImageUrl="~/pic/email2.png" Width="38px" />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:ImageButton ID="ImageButton5" runat="server" Height="27px" 
+                            ImageUrl="~/pic/if_facebook_2308066.png" Width="34px" />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Image ID="Image7" runat="server" Height="196px" 
+                            ImageUrl="~/pic/learn_gifs/forum_ak_gif.gif" Width="779px" />
+                    </asp:Panel>
+                </td>
+            </tr>
+        </table>
+                </td>
+        </tr>
+    </table>
+    <asp:Menu ID="Menu1" runat="server" 
+        ForeColor="#FF0080" Orientation="Horizontal" Font-Size="15pt" 
+        BackColor="#9999FF" BorderColor="Black">
+        <Items>
+            <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ACCOUNT" 
+                Value="ACCOUNT">
+                <asp:MenuItem Text="Change password" Value="Change password" 
+                    NavigateUrl="~/studentchangepassword.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Logout" Value="Logout" NavigateUrl="~/Mhome.aspx"></asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QUESTION DETAILS" 
+                Value="Question details">
+                <asp:MenuItem Text="Ask question" Value="Ask question" 
+                    NavigateUrl="~/studentaskquestionzone.aspx">
+                </asp:MenuItem>
+                <asp:MenuItem Text="Download" Value="Download" 
+                    NavigateUrl="~/downloadquestion.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="details question" Value="details" 
+                    NavigateUrl="~/questiondetail.aspx"></asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TEACHER contact" 
+                Value="TEACHER ZONE" NavigateUrl="~/Teacher Contact.aspx">
+            </asp:MenuItem>
+            <asp:MenuItem Text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ABOUT US" Value="ABOUT US">
+                <asp:MenuItem Text="History mission" Value="History mission"></asp:MenuItem>
+            </asp:MenuItem>
+        </Items>
+    </asp:Menu>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
